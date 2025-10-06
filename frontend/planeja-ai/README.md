@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✅ To-Do App com Supabase e Next.js
 
-## Getting Started
+Um aplicativo moderno de gerenciamento de tarefas (To-Do List) construído com **Next.js 14**, **React**, **Supabase** e **Tailwind CSS**.  
+Permite criar, listar, marcar como concluídas, editar e visualizar descrições de tarefas, além de gerar tarefas automáticas com IA.
 
-First, run the development server:
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- [Next.js 14 (App Router)](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Supabase](https://supabase.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide Icons](https://lucide.dev/icons)
+- [shadcn/ui](https://ui.shadcn.com/)
+
+---
+
+## ⚙️ Funcionalidades
+
+- 📝 **Adicionar tarefas** com título e descrição  
+- 🤖 **Gerar sugestões automáticas** de tarefas com IA  
+- ✅ **Marcar tarefas como concluídas ou pendentes**  
+- ✏️ **Editar nome e descrição** diretamente na lista  
+- 📊 **Visualizar total de tarefas pendentes e concluídas**  
+- 🗂️ **Filtrar por status**: Todas, Pendentes e Completas  
+- ☁️ **Persistência de dados** via Supabase  
+- 🎨 **Interface moderna e responsiva**
+
+---
+
+## 🧰 Estrutura do Projeto
+
+📦 project-root/
+├── 📁 app/ # Páginas do Next.js (App Router)
+│ └── page.tsx # Página inicial com a lista de tarefas
+├── 📁 components/ # Componentes reutilizáveis
+│ ├── add-task-form.tsx
+│ ├── analytics-cards.tsx
+│ └── task-list.tsx
+├── 📁 lib/
+│ └── supabase.ts # Conexão com o Supabase
+├── 📁 public/
+│ └── favicon.ico
+├── 📄 README.md
+├── 📄 package.json
+└── 📄 tailwind.config.ts
+
+---
+
+## ⚡ Como Executar o Projeto
+
+### 1️⃣ Clone o repositório
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/gabrielstorti55/Planeja-AI.git
+cd Planeja-AI
+2️⃣ Instale as dependências
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npm install
+# ou
+yarn install
+3️⃣ Configure o Supabase
+Crie um projeto no Supabase e adicione suas credenciais no arquivo .env:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+NEXT_PUBLIC_SUPABASE_URL=https://xxxxx.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=seu_anon_key_aqui
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧩 Melhorias Futuras
+💬 Notificações de tarefas atrasadas
 
-## Learn More
+🔄 Reordenar tarefas (drag & drop)
 
-To learn more about Next.js, take a look at the following resources:
+🌙 Tema escuro
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📱 PWA para uso offline
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🖼️ Preview
 
-## Deploy on Vercel
+🟦 Minhas Tarefas
+├── Pendentes: 3
+├── Completas: 2
+└── [Adicionar nova tarefa]
+A interface utiliza Cards e Tabs, com um visual limpo e responsivo.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👨‍💻 Autor
+Desenvolvido por Gabriel Storti Segalla 
