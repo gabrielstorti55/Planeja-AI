@@ -56,8 +56,8 @@ Permite criar, listar, marcar como concluídas, editar e visualizar descrições
 ```bash
 git clone https://github.com/gabrielstorti55/Planeja-AI.git
 cd Planeja-AI
-2️⃣ Instale as dependências
 
+### 2️⃣ Instale as dependências
 npm install
 # ou
 yarn install
